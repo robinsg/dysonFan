@@ -14,3 +14,5 @@ main/
 .pydevproject
 docs/_build
 README.rst
+Scripts/
+Lib/
