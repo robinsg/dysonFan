@@ -1,6 +1,6 @@
 {
-    "python.pythonPath": "C:\\Development\\General\\libpurecool\\Scripts\\python.exe",
+    "python.pythonPath": "C:\\Development\\General\\dysonFan\\Scripts\\python.exe",
     "python.autoComplete.extraPaths": [
-        "C:\\Development\\General\\libpurecool\\Lib\\site-packages"
+        "C:\\Development\\General\\dysonFan\\Lib\\site-packages"
     }
 }
