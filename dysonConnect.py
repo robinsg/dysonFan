@@ -1,4 +1,5 @@
 from libpurecool.dyson import DysonAccount
+from libpurecool.const import FanSpeed, FanPower, NightMode
 
 class DYSON(object):
     def __init__(self,user, password):
@@ -32,3 +33,18 @@ class DYSON(object):
             exit(998)
 
         return devices[i]
+
+    def night(self, dysonDev):
+        # Set the fan to night mode
+        dysonDev.set_configuration(
+            fan_power=FanPower.POWER_ON,
+            fan_speed=FanSpeed.FAN_SPEED_4,
+            night_mode=NightMode.NIGHT_MODE_ON)
+
+    # Power off the device
+    def powerOff(self, dysonDev):
+        dysonDev.set_configuration(fan_power=FanPower.POWER_OFF)
+
+    def disconnect(self, dysonDev):
+        # Disconnect
+        dysonDev.disconnect()
