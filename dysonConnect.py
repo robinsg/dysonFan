@@ -41,7 +41,7 @@ class DYSON(object):
             fan_speed=FanSpeed.FAN_SPEED_4,
             night_mode=NightMode.NIGHT_MODE_ON)
 
-    # Power off the device
+    # Power off the fan
     def powerOff(self, dysonDev):
         dysonDev.set_configuration(fan_power=FanPower.POWER_OFF)
 
